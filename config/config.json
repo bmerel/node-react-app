@@ -1,0 +1,41 @@
+{
+  "development": {
+    "database": {
+      "host": "127.0.0.1",
+      "port": "27017",
+      "database": "demo_development",
+      "username": "",
+      "password": ""
+    },
+    "server": {
+      "host": "127.0.0.1",
+      "port": "3000"
+    }
+  },
+  "test": {
+    "database": {
+      "host": "127.0.0.1",
+      "port": "27017",
+      "database": "demo_test",
+      "username": "",
+      "password": ""
+    },
+    "server": {
+      "host": "127.0.0.1",
+      "port": "3422"
+    }
+  },
+  "production": {
+    "database": {
+      "host": "127.0.0.1",
+      "port": "27017",
+      "database": "demo_development",
+      "username": "",
+      "password": ""
+    },
+    "server": {
+      "host": "127.0.0.1",
+      "port": "3422"
+    }
+  }
+}
