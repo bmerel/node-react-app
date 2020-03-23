@@ -1,6 +1,10 @@
+const teamModel = require('../models/teamModel');
+const userModel = require('../models/userModel');
+
 // All Team Data
 exports.teamAll = function(req, res) {
-  res.status(200).json({"user": req.params.user});
+  let user = req.params.user;
+  teamModel.teamAll(user).then(data => res.status(200).json(data));
 };
 
 

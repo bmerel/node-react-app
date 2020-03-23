@@ -6,8 +6,8 @@ const swaggerRouter = require('./routes/swaggerRoute');
 
 const app = express();
 
-const environmentConfig = config['development'];
-const port = environmentConfig['server']['port'];
+const serverConfig = config['development']['server'];
+const port = serverConfig['port'];
 
 app.use('/', userRouter);
 app.use('/', teamRouter);

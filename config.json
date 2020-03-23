@@ -2,10 +2,10 @@
   "development": {
     "database": {
       "host": "127.0.0.1",
-      "port": "27017",
-      "database": "demo_development",
-      "username": "",
-      "password": ""
+      "port": "5432",
+      "database": "testdb",
+      "username": "postgres",
+      "password": "Password1"
     },
     "server": {
       "host": "127.0.0.1",
