@@ -1,58 +1,70 @@
-// All User Data
+const userModel = require('../models/userModel');
+
+// All data
 exports.userAll = function(req, res) {
-  res.status(200).json({"user": req.params.user});
+  const input = {'user': req.params.user};
+  res.status(200).json(input);
 };
 
 
-// User Bio Data
+// Bio data
 exports.userBio = function(req, res) {
-  res.status(200).json({"user": req.params.user});
+  const input = {'user': req.params.user};
+  res.status(200).json(input);
 };
 
 
-// User Performance Summary Data
+// Performance data
 exports.userPerformance = function(req, res) {
-  res.status(200).json({"user": req.params.user});
+  const input = {'user': req.params.user};
+  res.status(200).json(input);
 };
 
 
-// User Performance Item Data
+// Performance item data
 exports.userPerformanceItem = function(req, res) {
-  res.status(200).json({"user": req.params.user, "id": req.params.id});
+  const input = {'user': req.params.user, 'id': req.params.id};
+  res.status(200).json(input);
 };
 
 
-// User PAR Summary Data
+// PAR data
 exports.userPar = function(req, res) {
-  res.status(200).json({"user": req.params.user});
+  const input = {'user': req.params.user};
+  res.status(200).json(input);
 };
 
 
-// User PAR Summary Data
+// PAR item data
 exports.userParItem = function(req, res) {
-  res.status(200).json({"user": req.params.user, "id": req.params.id});
+  const input = {'user': req.params.user, 'id': req.params.id};
+  res.status(200).json(input);
 };
 
 
-// User Transaction Summary Data
+// Transaction data
 exports.userTransaction = function(req, res) {
-  res.status(200).json({"user": req.params.user});
+  const input = {'user': req.params.user};
+  res.status(200).json(input);
 };
 
 
-// User Transaction Item Data
+// Transaction item data
 exports.userTransactionItem = function(req, res) {
-  res.status(200).json({"user": req.params.user, "id": req.params.id});
+  const input = {'user': req.params.user, 'id': req.params.id};
+  res.status(200).json(input);
 };
 
 
-// User Approval Summary Data
+// Approval data
 exports.userApproval = function(req, res) {
-  res.status(200).json({"user": req.params.user});
+  const input = {'user': req.params.user};
+  res.status(200).json(input);
 };
 
 
-// User Approval Item Data
+// Approval item data
 exports.userApprovalItem = function(req, res) {
-  res.status(200).json({"user": req.params.user, "id": req.params.id});
+  const input = {'user': req.params.user, 'id': req.params.id};
+  res.status(200).json(input);
 };

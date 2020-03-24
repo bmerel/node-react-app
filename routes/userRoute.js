@@ -1,8 +1,8 @@
 const express = require('express');
+const userController = require('../controllers/userController');
 const router = express.Router();
 
-var userController = require('../controllers/userController');
-
+// Define routes with parameters
 router.get('/api/v1/user/all/:user', userController.userAll);
 router.get('/api/v1/user/bio/:user', userController.userBio);
 router.get('/api/v1/user/performance/:user', userController.userPerformance);
@@ -14,4 +14,5 @@ router.get('/api/v1/user/transaction/:user/:id', userController.userTransactionI
 router.get('/api/v1/user/approval/:user', userController.userApproval)
 router.get('/api/v1/user/approval/:user/:id', userController.userApprovalItem);
 
+//
 module.exports = router;

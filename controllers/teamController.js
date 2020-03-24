@@ -1,50 +1,56 @@
 const teamModel = require('../models/teamModel');
-const userModel = require('../models/userModel');
 
-// All Team Data
+// All team data
 exports.teamAll = function(req, res) {
-  let user = req.params.user;
-  teamModel.teamAll(user).then(data => res.status(200).json(data));
+  const input = {'user': req.params.user.toLowerCase()};
+  teamModel.teamAll(input).then(data => res.status(200).json(data));
 };
 
 
-// All Team Employee Data
+// All employee data
 exports.teamAllEmployee = function(req, res) {
-  res.status(200).json({'user': req.params.user, 'employee': req.params.employee});
+  const input = {'user': req.params.user, 'employee': req.params.employee};
+  res.status(200).json(input);
 };
 
 
-// Team Bio Data
+// Team bio data
 exports.teamBio = function(req, res) {
-  res.status(200).json({"user": req.params.user});
+  const input = {'user': req.params.user};
+  res.status(200).json(input);
 };
 
 
-// Team Employee Bio Data
+// Employee bio data
 exports.teamBioEmployee = function(req, res) {
-  res.status(200).json({'user': req.params.user, 'employee': req.params.employee});
+  const input = {'user': req.params.user, 'employee': req.params.employee};
+  res.status(200).json(input);
 };
 
 
-// Team Performance Data
+// Team performance data
 exports.teamPerformance = function(req, res) {
-  res.status(200).json({"user": req.params.user});
+  const input = {'user': req.params.user};
+  res.status(200).json(input);
 };
 
 
-// Team Employee Performance Data
+// Employee performance data
 exports.teamPerformanceEmployee = function(req, res) {
-  res.status(200).json({'user': req.params.user, 'employee': req.params.employee});
+  const input = {'user': req.params.user, 'employee': req.params.employee};
+  res.status(200).json(input);
 };
 
 
-// Team Par Data
+// Team par data
 exports.teamPar = function(req, res) {
-  res.status(200).json({"user": req.params.user});
+  const input = {'user': req.params.user};
+  res.status(200).json(input);
 };
 
 
-// Team Employee Par Data
+// Employee par data
 exports.teamParEmployee = function(req, res) {
-  res.status(200).json({'user': req.params.user, 'employee': req.params.employee});
+  const input = {'user': req.params.user, 'employee': req.params.employee};
+  res.status(200).json(input);
 };
