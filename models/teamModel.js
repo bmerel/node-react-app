@@ -3,10 +3,9 @@ const database = require('../common/database');
 
 // All team data
 exports.teamAll = function(input) {
-  const name = 'teamAll';
   const text = 'SELECT * FROM users WHERE LOWER(oprid) = $1';
   const values = [input.user];
-  const query = {name: name, text: text, values: values};
+  const query = {text: text, values: values};
 
   return database.select(query)
 };
@@ -14,10 +13,9 @@ exports.teamAll = function(input) {
 
 // All employee data
 exports.teamAllEmployee = function(input) {
-  const name = 'teamAllEmployee';
   const text = '';
   const values = [];
-  const query = {};
+  const query = {text: text, values: values};
 
   return database.select(query)
 };
@@ -25,10 +23,9 @@ exports.teamAllEmployee = function(input) {
 
 // Team bio data
 exports.teamBio = function(input) {
-  const name = 'teamBio';
   const text = '';
   const values = [];
-  const query = {};
+  const query = {text: text, values: values};
 
   return database.select(query)
 };
@@ -36,10 +33,9 @@ exports.teamBio = function(input) {
 
 // Employee bio data
 exports.teamBioEmployee = function(input) {
-  const name = 'teamBioEmployee';
   const text = '';
   const values = [];
-  const query = {};
+  const query = {text: text, values: values};
 
   return database.select(query)
 };
@@ -47,10 +43,9 @@ exports.teamBioEmployee = function(input) {
 
 // Team performance data
 exports.teamPerformance = function(input) {
-  const name = 'teamPerformance';
   const text = '';
   const values = [];
-  const query = {};
+  const query = {text: text, values: values};
 
   return database.select(query)
 };
@@ -58,10 +53,9 @@ exports.teamPerformance = function(input) {
 
 // Employee performance data
 exports.teamPerformanceEmployee = function(input) {
-  const name = 'teamPerformanceEmployee';
   const text = '';
   const values = [];
-  const query = {};
+  const query = {text: text, values: values};
 
   return database.select(query)
 };
@@ -69,10 +63,9 @@ exports.teamPerformanceEmployee = function(input) {
 
 // Team par data
 exports.teamPar = function(input) {
-  const name = 'teamPar';
   const text = '';
   const values = [];
-  const query = {};
+  const query = {text: text, values: values};
 
   return database.select(query)
 };
@@ -80,10 +73,9 @@ exports.teamPar = function(input) {
 
 // Employee par data
 exports.teamParEmployee = function(input) {
-  const name = 'teamParEmployee';
   const text = '';
   const values = [];
-  const query = {};
+  const query = {text: text, values: values};
 
   return database.select(query)
 };

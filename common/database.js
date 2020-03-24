@@ -31,3 +31,17 @@ exports.select = async function(query) {
           console.error(err);
       };
 };
+
+
+// create insert API usage query
+exports.apiUsage = async function(req) {
+      try {
+          const text = 'INSERT INTO apiUsage values ($1, $2, $3)';
+          const values = [req.params.user, req.route.path, req.params];
+          query = {'text': text, 'values': values};
+          const client = await pool.connect();
+          const res = await client.query(query);
+      } catch (err) {
+          console.error(err);
+      };
+};
